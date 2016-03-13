@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/marami/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="PrimeNumber.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/marami/PrimeNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37588653">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.5851064">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,8 +58,9 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/marami/PrimeNumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#315#316#0" expanded="true" />
@@ -88,6 +89,12 @@
                 <element signature="e#1543#1544#0" expanded="true" />
                 <element signature="e#1598#1599#0" expanded="true" />
                 <element signature="e#1664#1665#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
+                <element signature="e#1843#1844#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+                <element signature="e#2044#2045#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,10 +117,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/marami/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/marami/PrimeNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/marami/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/com/marami/PrimeNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/marami/PrimeNumber.java" />
       </list>
     </option>
   </component>
@@ -260,58 +267,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager" selected="JUnit.PrimeNumberTest">
-    <configuration default="false" name="PrimeNumberTest.testIsPrime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.com.marami.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MaxPrimeNumber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.com.marami" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.marami.PrimeNumberTest" />
-      <option name="METHOD_NAME" value="testIsPrime" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PrimeNumberTest.testIsPrime0isFasle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.com.marami.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MaxPrimeNumber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.com.marami" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.marami.PrimeNumberTest" />
-      <option name="METHOD_NAME" value="testIsPrime0isFasle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="PrimeNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -364,7 +319,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PrimeNumberTest.testFindMaxPrime131is131" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PrimeNumberTest.testFindNumbersOfOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.com.marami.*" />
@@ -376,7 +331,59 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.com.marami" />
       <option name="MAIN_CLASS_NAME" value="ua.com.marami.PrimeNumberTest" />
-      <option name="METHOD_NAME" value="testFindMaxPrime131is131" />
+      <option name="METHOD_NAME" value="testFindNumbersOfOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="PrimeNumberTest.testFindAmountOfOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.com.marami.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MaxPrimeNumber" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.com.marami" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.marami.PrimeNumberTest" />
+      <option name="METHOD_NAME" value="testFindAmountOfOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="PrimeNumberTest.testFindAmountOfOne2048" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.com.marami.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MaxPrimeNumber" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.com.marami" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.marami.PrimeNumberTest" />
+      <option name="METHOD_NAME" value="testFindAmountOfOne2048" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -856,19 +863,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.clean install" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testIsPrime" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testIsPrime0isFasle" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime133is131" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime131is131" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime133is131" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindNumbersOfOne" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindAmountOfOne" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindAmountOfOne2048" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime133is131" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime131is131" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testIsPrime0isFasle" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testIsPrime" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindAmountOfOne2048" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindAmountOfOne" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindNumbersOfOne" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PrimeNumberTest.testFindMaxPrime133is131" />
       </list>
     </recent_temporary>
   </component>
@@ -879,44 +886,44 @@
       <created>1457882707990</created>
       <option name="number" value="Default" />
       <updated>1457882707990</updated>
-      <workItem from="1457882713009" duration="2627000" />
+      <workItem from="1457882713009" duration="6286000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PrimeNumberTest - 2016.03.13 at 17h 47m 30s.xml">
+    <history-entry file="PrimeNumberTest - 2016.03.13 at 19h 09m 40s.xml">
       <configuration name="PrimeNumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest - 2016.03.13 at 17h 48m 02s.xml">
-      <configuration name="PrimeNumberTest" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne - 2016.03.13 at 19h 06m 12s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest - 2016.03.13 at 17h 50m 02s.xml">
-      <configuration name="PrimeNumberTest" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne - 2016.03.13 at 19h 06m 41s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest - 2016.03.13 at 18h 06m 09s.xml">
-      <configuration name="PrimeNumberTest" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne - 2016.03.13 at 19h 07m 23s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest - 2016.03.13 at 18h 08m 20s.xml">
-      <configuration name="PrimeNumberTest" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne - 2016.03.13 at 19h 07m 43s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest_testFindMaxPrime131is131 - 2016.03.13 at 18h 04m 11s.xml">
-      <configuration name="PrimeNumberTest.testFindMaxPrime131is131" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne - 2016.03.13 at 19h 07m 47s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest_testFindMaxPrime131is131 - 2016.03.13 at 18h 04m 30s.xml">
-      <configuration name="PrimeNumberTest.testFindMaxPrime131is131" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindAmountOfOne2048 - 2016.03.13 at 19h 08m 31s.xml">
+      <configuration name="PrimeNumberTest.testFindAmountOfOne2048" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest_testFindMaxPrime133is131 - 2016.03.13 at 18h 03m 31s.xml">
-      <configuration name="PrimeNumberTest.testFindMaxPrime133is131" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindNumbersOfOne - 2016.03.13 at 18h 54m 35s.xml">
+      <configuration name="PrimeNumberTest.testFindNumbersOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest_testFindMaxPrime133is131 - 2016.03.13 at 18h 04m 33s.xml">
-      <configuration name="PrimeNumberTest.testFindMaxPrime133is131" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindNumbersOfOne - 2016.03.13 at 18h 54m 52s.xml">
+      <configuration name="PrimeNumberTest.testFindNumbersOfOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrimeNumberTest_testFindMaxPrime133is131 - 2016.03.13 at 18h 06m 03s.xml">
-      <configuration name="PrimeNumberTest.testFindMaxPrime133is131" configurationId="JUnit" />
+    <history-entry file="PrimeNumberTest_testFindNumbersOfOne - 2016.03.13 at 18h 57m 20s.xml">
+      <configuration name="PrimeNumberTest.testFindNumbersOfOne" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2627000" />
+    <option name="totallyTimeSpent" value="6286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -952,7 +959,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/marami/PrimeNumberTest.java</url>
+          <line>80</line>
+          <properties class="ua.com.marami.PrimeNumberTest" method="testFindAmountOfOne333" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -972,7 +987,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/marami/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37649402">
+          <caret line="735" column="0" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -980,8 +1003,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/marami/PrimeNumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#213#214#0" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
@@ -1010,14 +1034,20 @@
             <element signature="e#1543#1544#0" expanded="true" />
             <element signature="e#1598#1599#0" expanded="true" />
             <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2044#2045#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/marami/PrimeNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37588653">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.5851064">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

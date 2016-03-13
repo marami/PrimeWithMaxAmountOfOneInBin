@@ -7,6 +7,4 @@ public class Main {
         int number = Integer.parseInt(args[0]);
 
     }
-
-
 }

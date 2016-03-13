@@ -13,8 +13,11 @@ public class PrimeNumber {
         else if (number % 2 == 0) {
             return false;
         }
+
         for (int i = 2; i*i <= number; i++) {
-            if (number % i == 0) return false;
+            if (number % i == 0) {
+                return false;
+            }
         }
         return true;
     }
@@ -27,5 +30,20 @@ public class PrimeNumber {
             }
         }
         return null;
+    }
+
+    public static int findAmountOfOneInBin(int number){
+        int b;
+        int amount = 0;
+
+        while(number !=0) {
+            b = number%2;
+            if(b == 1) {
+                amount++;
+            }
+            number = number/2;
+        }
+
+        return amount;
     }
 }

@@ -77,4 +77,18 @@ public class PrimeNumberTest {
         assertThat(PrimeNumber.findMaxPrime(133), is(131));
     }
 
+    @Test
+    public void testFindAmountOfOne333(){
+        assertThat(PrimeNumber.findAmountOfOneInBin(333), is(5));
+    }
+
+    @Test
+    public void testFindAmountOfOne1023(){
+        assertThat(PrimeNumber.findAmountOfOneInBin(1023), is(10));
+    }
+
+    @Test
+    public void testFindAmountOfOne2048(){
+        assertThat(PrimeNumber.findAmountOfOneInBin(2048), is(1));
+    }
 }
