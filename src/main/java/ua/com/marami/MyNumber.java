@@ -1,6 +1,6 @@
 package ua.com.marami;
 
-public class PrimeNumber {
+public class MyNumber {
 
     public static boolean isPrime(int number){
 

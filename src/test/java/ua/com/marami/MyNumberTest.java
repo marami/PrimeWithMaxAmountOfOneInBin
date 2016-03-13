@@ -5,90 +5,90 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class PrimeNumberTest {
+public class MyNumberTest {
 
     @Test
     public void testIsPrimeNegativeIsFasle(){
-        assertFalse(PrimeNumber.isPrime(-1));
+        assertFalse(MyNumber.isPrime(-1));
     }
 
     @Test
     public void testIsPrime0IsFasle(){
-        assertFalse(PrimeNumber.isPrime(0));
+        assertFalse(MyNumber.isPrime(0));
     }
 
     @Test
     public void testIsPrime1IsFasle(){
-        assertFalse(PrimeNumber.isPrime(1));
+        assertFalse(MyNumber.isPrime(1));
     }
 
     @Test
     public void testIsPrime2IsTrue(){
-        assertTrue(PrimeNumber.isPrime(2));
+        assertTrue(MyNumber.isPrime(2));
     }
 
     @Test
     public void testIsPrime3IsTrue(){
-        assertTrue(PrimeNumber.isPrime(3));
+        assertTrue(MyNumber.isPrime(3));
     }
 
     @Test
     public void testIsPrime61IsTrue(){
-        assertTrue(PrimeNumber.isPrime(61));
+        assertTrue(MyNumber.isPrime(61));
     }
 
     @Test
     public void testIsPrime131IsTrue(){
-        assertTrue(PrimeNumber.isPrime(131));
+        assertTrue(MyNumber.isPrime(131));
     }
 
     @Test
     public void testIsPrime133IsFalse(){
-        assertFalse(PrimeNumber.isPrime(133));
+        assertFalse(MyNumber.isPrime(133));
     }
 
     @Test
     public void testFindMaxPrimeNegativeisNull(){
-        assertNull(PrimeNumber.findMaxPrime(-1));
+        assertNull(MyNumber.findMaxPrime(-1));
     }
 
     @Test
     public void testFindMaxPrime0isNull(){
-        assertNull(PrimeNumber.findMaxPrime(0));
+        assertNull(MyNumber.findMaxPrime(0));
     }
 
     @Test
     public void testFindMaxPrime1isNull(){
-        assertNull(PrimeNumber.findMaxPrime(1));
+        assertNull(MyNumber.findMaxPrime(1));
     }
 
     @Test
     public void testFindMaxPrime2is2(){
-        assertThat(PrimeNumber.findMaxPrime(2), is(2));
+        assertThat(MyNumber.findMaxPrime(2), is(2));
     }
 
     @Test
     public void testFindMaxPrime131is131(){
-        assertThat(PrimeNumber.findMaxPrime(131), is(131));
+        assertThat(MyNumber.findMaxPrime(131), is(131));
     }
 
     @Test
     public void testFindMaxPrime133is131(){
-        assertThat(PrimeNumber.findMaxPrime(133), is(131));
+        assertThat(MyNumber.findMaxPrime(133), is(131));
     }
 
     @Test
     public void testFindAmountOfOne333(){
-        assertThat(PrimeNumber.findAmountOfOneInBin(333), is(5));
+        assertThat(MyNumber.findAmountOfOneInBin(333), is(5));
     }
 
     @Test
     public void testFindAmountOfOne1023(){
-        assertThat(PrimeNumber.findAmountOfOneInBin(1023), is(10));
+        assertThat(MyNumber.findAmountOfOneInBin(1023), is(10));
     }
 
     @Test
     public void testFindAmountOfOne2048(){
-        assertThat(PrimeNumber.findAmountOfOneInBin(2048), is(1));
+        assertThat(MyNumber.findAmountOfOneInBin(2048), is(1));
     }
 }
