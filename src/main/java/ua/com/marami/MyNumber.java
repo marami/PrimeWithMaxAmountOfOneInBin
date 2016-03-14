@@ -22,16 +22,6 @@ public class MyNumber {
         return true;
     }
 
-    public static Integer findMaxPrime(int number){
-
-        for (int i = number; i > 1; i--){
-            if(isPrime(i)){
-                return i;
-            }
-        }
-        return null;
-    }
-
     public static int findAmountOfOneInBin(int number){
         int b;
         int amount = 0;

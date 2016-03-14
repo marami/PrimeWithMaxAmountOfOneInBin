@@ -48,36 +48,6 @@ public class MyNumberTest {
     }
 
     @Test
-    public void testFindMaxPrimeNegativeisNull(){
-        assertNull(MyNumber.findMaxPrime(-1));
-    }
-
-    @Test
-    public void testFindMaxPrime0isNull(){
-        assertNull(MyNumber.findMaxPrime(0));
-    }
-
-    @Test
-    public void testFindMaxPrime1isNull(){
-        assertNull(MyNumber.findMaxPrime(1));
-    }
-
-    @Test
-    public void testFindMaxPrime2is2(){
-        assertThat(MyNumber.findMaxPrime(2), is(2));
-    }
-
-    @Test
-    public void testFindMaxPrime131is131(){
-        assertThat(MyNumber.findMaxPrime(131), is(131));
-    }
-
-    @Test
-    public void testFindMaxPrime133is131(){
-        assertThat(MyNumber.findMaxPrime(133), is(131));
-    }
-
-    @Test
     public void testFindAmountOfOne333(){
         assertThat(MyNumber.findAmountOfOneInBin(333), is(5));
     }

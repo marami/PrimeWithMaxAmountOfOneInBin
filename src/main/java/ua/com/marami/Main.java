@@ -4,8 +4,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        //int number = Integer.parseInt(args[0]);
-        int number2 = 333;
+        int number2 = 1000;
 
         int numberWithMaxAmountOfOne = 0;
         int amountOfOne = 0;
