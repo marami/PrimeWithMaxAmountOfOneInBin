@@ -8,7 +8,7 @@ public class ConsoleScanner {
 
     private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public int getInt(int start, int end) {
+    public int getInt(int minValue, int maxValue) {
         int number;
 
         while (true) {
@@ -16,14 +16,14 @@ public class ConsoleScanner {
                 try {
                     number = Integer.parseInt(bufferedReader.readLine());
                 } catch (NumberFormatException | IOException e) {
-                    System.out.println("You should type a number from " + start + " to " + end + ": ");
+                    System.out.println("You should type a number from " + minValue + " to " + maxValue + ": ");
                     continue;
                 }
                 break;
             }
 
-            if ((number < start | number > end)) {
-                System.out.println("You should type a number FROM " + start + " TO " + end + ": ");
+            if ((number < minValue | number > maxValue)) {
+                System.out.println("You should type a number FROM " + minValue + " TO " + maxValue + ": ");
                 continue;
             } else {
                 return number;
@@ -31,9 +31,9 @@ public class ConsoleScanner {
         }
     }
 
-    public int getInt(int start) {
-        int end = Integer.MAX_VALUE;
-        return getInt(start, end);
+    public int getInt(int minValue) {
+        int maxValue = Integer.MAX_VALUE;
+        return getInt(minValue, maxValue);
     }
 
     public void close() {
