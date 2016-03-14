@@ -32,8 +32,7 @@ public class ConsoleScanner {
     }
 
     public int getInt(int minValue) {
-        int maxValue = Integer.MAX_VALUE;
-        return getInt(minValue, maxValue);
+        return getInt(minValue, Integer.MAX_VALUE);
     }
 
     public void close() {

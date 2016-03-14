@@ -2,24 +2,22 @@ package ua.com.marami;
 
 public class Main {
 
-    public static final int MIN_PRIME_NUMBER = 2;
-
     public static void main(String[] args){
-        int number = askNumber();
+        int maxValue = askNumber(MyNumber.MIN_PRIME_NUMBER);
 
         PrimeNumberInBin pn = new PrimeNumberInBin();
-        int primeNumberWithMaxAmountOfOne = pn.findNumberWithMaxAmountOfOne(number);
+        int primeNumberWithMaxAmountOfOne = pn.findNumberWithMaxAmountOfOne(maxValue);
 
         System.out.println(primeNumberWithMaxAmountOfOne + " has " + pn.getAmountOfOne() + " symbols \"1\"");
     }
 
-    public static int askNumber(){
+    private static int askNumber(int minValue){
         ConsoleScanner cs = new ConsoleScanner();
-        int number;
+        int askedNumber;
 
         System.out.print("Type a number: ");
-        number = cs.getInt(MIN_PRIME_NUMBER);
+        askedNumber = cs.getInt(minValue);
         cs.close();
-        return number;
+        return askedNumber;
     }
 }

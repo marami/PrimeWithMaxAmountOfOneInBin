@@ -2,14 +2,12 @@ package ua.com.marami;
 
 public class PrimeNumberInBin {
 
-    private static final int MIN_PRIME_NUMBER = 2;
-
     private int primeNumber = 0;
     private int amountOfOne = 0;
 
     public int findNumberWithMaxAmountOfOne(int maxNumber){
 
-        if(maxNumber < MIN_PRIME_NUMBER){
+        if(maxNumber < MyNumber.MIN_PRIME_NUMBER){
             return 0;
         }
 

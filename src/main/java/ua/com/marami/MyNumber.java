@@ -2,13 +2,16 @@ package ua.com.marami;
 
 public class MyNumber {
 
+    public static final int MIN_PRIME_NUMBER = 2;
+    private static final int MIN_DIVIDER = 2;
+
     public static boolean isPrime(int number){
 
-        if (number < 2) {
+        if (number < MIN_PRIME_NUMBER) {
             return false;
         }
 
-        for (int i = 2; i*i <= number; i++) {
+        for (int i = MIN_DIVIDER; i*i <= number; i++) {
             if (number % i == 0) {
                 return false;
             }
@@ -17,12 +20,12 @@ public class MyNumber {
     }
 
     public static int findAmountOfOneInBin(int number){
-        int b;
+        int remainder;
         int amount = 0;
 
         while(number != 0) {
-            b = number % 2;
-            if(b == 1) {
+            remainder = number % 2;
+            if(remainder == 1) {
                 amount++;
             }
             number = number / 2;
