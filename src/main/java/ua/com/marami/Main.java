@@ -4,16 +4,16 @@ public class Main {
 
     public static void main(String[] args){
 
-        int number2 = 1000;
+        int number = 1000;
 
         int numberWithMaxAmountOfOne = 0;
         int amountOfOne = 0;
 
-        for (int i = number2; i > 1; i--){
+        for (int i = number; i > 1; i--){
             if(MyNumber.isPrime(i)){
-                int tempAmountOfOne = MyNumber.findAmountOfOneInBin(i);
-                if (tempAmountOfOne > amountOfOne){
-                    amountOfOne = tempAmountOfOne;
+                int temp = MyNumber.findAmountOfOneInBin(i);
+                if (temp > amountOfOne){
+                    amountOfOne = temp;
                     numberWithMaxAmountOfOne = i;
                 }
             }

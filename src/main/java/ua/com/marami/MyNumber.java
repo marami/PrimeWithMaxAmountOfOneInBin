@@ -7,12 +7,6 @@ public class MyNumber {
         if (number < 2) {
             return false;
         }
-        else if (number == 2) {
-            return true;
-        }
-        else if (number % 2 == 0) {
-            return false;
-        }
 
         for (int i = 2; i*i <= number; i++) {
             if (number % i == 0) {
@@ -26,12 +20,12 @@ public class MyNumber {
         int b;
         int amount = 0;
 
-        while(number !=0) {
-            b = number%2;
+        while(number != 0) {
+            b = number % 2;
             if(b == 1) {
                 amount++;
             }
-            number = number/2;
+            number = number / 2;
         }
 
         return amount;
