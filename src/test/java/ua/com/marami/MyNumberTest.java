@@ -13,7 +13,7 @@ public class MyNumberTest {
     }
 
     @Test
-    public void testIsPrime0IsFasle(){
+    public void testIsPrimeZeroIsFasle(){
         assertFalse(MyNumber.isPrime(0));
     }
 

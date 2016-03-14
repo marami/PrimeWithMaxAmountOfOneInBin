@@ -2,9 +2,17 @@ package ua.com.marami;
 
 public class Main {
 
+    public static final int MIN_PRIME_NUMBER = 2;
+
     public static void main(String[] args){
 
-        int number = 1000;
+        ConsoleScanner cs = new ConsoleScanner();
+
+        int number;
+
+        System.out.print("Type a number: ");
+        number = cs.getInt(MIN_PRIME_NUMBER);
+        cs.close();
 
         int numberWithMaxAmountOfOne = 0;
         int amountOfOne = 0;
