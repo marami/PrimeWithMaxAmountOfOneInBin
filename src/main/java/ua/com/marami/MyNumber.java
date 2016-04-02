@@ -22,15 +22,16 @@ public final class MyNumber {
     }
 
     public static int findAmountOfOneInBin(int number){
+        int checkedNumber = number;
         int remainder;
         int amount = 0;
 
-        while(number != 0) {
-            remainder = number % 2;
+        while(checkedNumber != 0) {
+            remainder = checkedNumber % 2;
             if(remainder == 1) {
                 amount++;
             }
-            number = number / 2;
+            checkedNumber = checkedNumber / 2;
         }
 
         return amount;
