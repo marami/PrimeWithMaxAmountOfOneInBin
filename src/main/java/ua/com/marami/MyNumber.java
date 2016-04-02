@@ -1,6 +1,6 @@
 package ua.com.marami;
 
-public class MyNumber {
+public final class MyNumber {
 
     private MyNumber(){}
 

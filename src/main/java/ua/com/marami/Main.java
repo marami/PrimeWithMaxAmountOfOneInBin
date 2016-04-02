@@ -1,6 +1,6 @@
 package ua.com.marami;
 
-public class Main {
+public final class Main {
 
     private Main(){}
 
