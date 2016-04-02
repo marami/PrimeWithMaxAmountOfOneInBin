@@ -7,7 +7,7 @@ public final class MyNumber {
     public static final int MIN_PRIME_NUMBER = 2;
     private static final int MIN_DIVIDER = 2;
 
-    public static boolean isPrime(int number){
+    public static boolean isPrime(final int number){
 
         if (number < MIN_PRIME_NUMBER) {
             return false;
@@ -21,7 +21,7 @@ public final class MyNumber {
         return true;
     }
 
-    public static int findAmountOfOneInBin(int number){
+    public static int findAmountOfOneInBin(final int number){
         int checkedNumber = number;
         int remainder;
         int amount = 0;

@@ -8,7 +8,7 @@ public class ConsoleScanner {
 
     private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public final int getInt(int minValue, int maxValue) {
+    public final int getInt(final int minValue, final int maxValue) {
         int number;
 
         while (true) {
@@ -22,7 +22,7 @@ public class ConsoleScanner {
                 break;
             }
 
-            if ((number < minValue | number > maxValue)) {
+            if (number < minValue | number > maxValue) {
                 System.out.println("You should type a number FROM " + minValue + " TO " + maxValue + ": ");
                 continue;
             } else {
@@ -31,7 +31,7 @@ public class ConsoleScanner {
         }
     }
 
-    public final int getInt(int minValue) {
+    public final int getInt(final int minValue) {
         return getInt(minValue, Integer.MAX_VALUE);
     }
 

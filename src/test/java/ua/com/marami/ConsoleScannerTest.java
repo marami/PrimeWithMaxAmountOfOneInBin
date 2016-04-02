@@ -22,7 +22,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class ConsoleScannerTest {
 
-    BufferedReader bufferedReader = org.mockito.Mockito.mock(BufferedReader.class);
+    private BufferedReader bufferedReader = org.mockito.Mockito.mock(BufferedReader.class);
 
     @Mock
     private PrintStream printStream;

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class PrimeNumberInBinTest {
 
-    PrimeNumberInBin pn;
+    private PrimeNumberInBin pn;
 
     @Before
     public void setUp(){
