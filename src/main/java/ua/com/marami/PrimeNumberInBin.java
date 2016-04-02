@@ -5,7 +5,7 @@ public class PrimeNumberInBin {
     private int primeNumber = 0;
     private int amountOfOne = 0;
 
-    public int findNumberWithMaxAmountOfOne(int maxNumber){
+    public final int findNumberWithMaxAmountOfOne(int maxNumber){
 
         if(maxNumber < MyNumber.MIN_PRIME_NUMBER){
             System.out.println("There is no prime number less than 2");
@@ -25,7 +25,7 @@ public class PrimeNumberInBin {
     return primeNumber;
     }
 
-    public int getAmountOfOne(){
+    public final int getAmountOfOne(){
         return amountOfOne;
     }
 }

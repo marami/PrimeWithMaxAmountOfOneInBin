@@ -8,7 +8,7 @@ public class ConsoleScanner {
 
     private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public int getInt(int minValue, int maxValue) {
+    public final int getInt(int minValue, int maxValue) {
         int number;
 
         while (true) {
@@ -31,11 +31,11 @@ public class ConsoleScanner {
         }
     }
 
-    public int getInt(int minValue) {
+    public final int getInt(int minValue) {
         return getInt(minValue, Integer.MAX_VALUE);
     }
 
-    public void close() {
+    public final void close() {
         try {
             bufferedReader.close();
         } catch (IOException e) {
