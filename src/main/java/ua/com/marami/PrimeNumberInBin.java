@@ -8,6 +8,7 @@ public class PrimeNumberInBin {
     public int findNumberWithMaxAmountOfOne(int maxNumber){
 
         if(maxNumber < MyNumber.MIN_PRIME_NUMBER){
+            System.out.println("There is no prime number less than 2");
             return 0;
         }
 

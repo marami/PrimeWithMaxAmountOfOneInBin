@@ -2,6 +2,8 @@ package ua.com.marami;
 
 public class MyNumber {
 
+    private MyNumber(){}
+
     public static final int MIN_PRIME_NUMBER = 2;
     private static final int MIN_DIVIDER = 2;
 

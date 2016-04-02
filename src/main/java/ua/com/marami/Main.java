@@ -2,6 +2,8 @@ package ua.com.marami;
 
 public class Main {
 
+    private Main(){}
+
     public static void main(String[] args){
         int maxValue = askNumber(MyNumber.MIN_PRIME_NUMBER);
 
