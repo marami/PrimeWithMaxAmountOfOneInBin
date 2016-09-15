@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>MaxPrimeNumber</name>
+
     <groupId>ua.com.marami</groupId>
     <artifactId>MaxPrimeNumber</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -15,6 +16,8 @@
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <junit.version>4.12</junit.version>
         <org.mockito-all.version>1.10.19</org.mockito-all.version>
+
+        <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
     </properties>
 
     <dependencies>
@@ -33,19 +36,50 @@
         </dependency>
     </dependencies>
 
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>${maven-pmd-plugin.version}</version>
+                <reportSets>
+                    <reportSet>
+                        <id>pmd-report</id>
+                        <reports>
+                            <report>pmd</report>
+                        </reports>
+                        <configuration>
+                            <skipEmptyReport>false</skipEmptyReport>
+                        </configuration>
+                    </reportSet>
+
+                    <reportSet>
+                        <id>cpd-report</id>
+                        <reports>
+                            <report>cpd</report>
+                        </reports>
+                        <configuration>
+                            <skipEmptyReport>false</skipEmptyReport>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+
     <build>
-    <plugins>
-
-        <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>${maven-compiler-plugin.version}</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-
-    </plugins>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
