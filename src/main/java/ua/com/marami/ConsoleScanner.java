@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 public class ConsoleScanner {
 
     private final Charset encoding = StandardCharsets.UTF_8;
-    private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     public final int getInt(final int minValue, final int maxValue) {
         while (true) {
