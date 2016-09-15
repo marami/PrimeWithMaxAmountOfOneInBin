@@ -20,13 +20,15 @@
         <!-- Plugin Versions -->
         <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
         <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
+        <maven-surefire-report-plugin.version>2.19.1</maven-surefire-report-plugin.version>
+        <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
         <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
         <javancss-maven-plugin.version>2.1</javancss-maven-plugin.version>
-        <maven-surefire-report-plugin.version></maven-surefire-report-plugin.version>
+        <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
+        <jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
 
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
-        <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
     </properties>
 
     <dependencies>
@@ -118,7 +120,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>${maven-surefire-report-plugin.version}</version>
                 <reportSets>
                     <reportSet>
                         <id>unit-tests</id>
@@ -131,6 +133,19 @@
                         </configuration>
                     </reportSet>
                 </reportSets>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>${findbugs-maven-plugin.version}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>${jdepend-maven-plugin.version}</version>
             </plugin>
         </plugins>
     </reporting>
