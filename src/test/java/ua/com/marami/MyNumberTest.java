@@ -8,57 +8,57 @@ import org.junit.Test;
 public class MyNumberTest {
 
     @Test
-    public void testIsPrimeNegativeIsFasle(){
+    public void testIsPrimeNegativeIsFasle() {
         assertFalse(MyNumber.isPrime(-1));
     }
 
     @Test
-    public void testIsPrimeZeroIsFasle(){
+    public void testIsPrimeZeroIsFasle() {
         assertFalse(MyNumber.isPrime(0));
     }
 
     @Test
-    public void testIsPrime1IsFasle(){
+    public void testIsPrime1IsFasle() {
         assertFalse(MyNumber.isPrime(1));
     }
 
     @Test
-    public void testIsPrime2IsTrue(){
+    public void testIsPrime2IsTrue() {
         assertTrue(MyNumber.isPrime(2));
     }
 
     @Test
-    public void testIsPrime3IsTrue(){
+    public void testIsPrime3IsTrue() {
         assertTrue(MyNumber.isPrime(3));
     }
 
     @Test
-    public void testIsPrime61IsTrue(){
+    public void testIsPrime61IsTrue() {
         assertTrue(MyNumber.isPrime(61));
     }
 
     @Test
-    public void testIsPrime131IsTrue(){
+    public void testIsPrime131IsTrue() {
         assertTrue(MyNumber.isPrime(131));
     }
 
     @Test
-    public void testIsPrime133IsFalse(){
+    public void testIsPrime133IsFalse() {
         assertFalse(MyNumber.isPrime(133));
     }
 
     @Test
-    public void testFindAmountOfOne333(){
+    public void testFindAmountOfOne333() {
         assertThat(MyNumber.findAmountOfOneInBin(333), is(5));
     }
 
     @Test
-    public void testFindAmountOfOne1023(){
+    public void testFindAmountOfOne1023() {
         assertThat(MyNumber.findAmountOfOneInBin(1023), is(10));
     }
 
     @Test
-    public void testFindAmountOfOne2048(){
+    public void testFindAmountOfOne2048() {
         assertThat(MyNumber.findAmountOfOneInBin(2048), is(1));
     }
 }
