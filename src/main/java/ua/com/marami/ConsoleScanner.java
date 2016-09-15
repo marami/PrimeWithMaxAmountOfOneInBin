@@ -9,24 +9,16 @@ public class ConsoleScanner {
     private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     public final int getInt(final int minValue, final int maxValue) {
-        int number;
-
         while (true) {
-            while (true) {
-                try {
-                    number = Integer.parseInt(bufferedReader.readLine());
-                } catch (NumberFormatException | IOException e) {
-                    System.out.println("You should type a number from " + minValue + " to " + maxValue + ": ");
-                    continue;
+            try {
+                int number = Integer.parseInt(bufferedReader.readLine());
+                if (number < minValue | number > maxValue) {
+                    System.out.println("You should type a number FROM " + minValue + " TO " + maxValue + ": ");
+                } else {
+                    return number;
                 }
-                break;
-            }
-
-            if (number < minValue | number > maxValue) {
-                System.out.println("You should type a number FROM " + minValue + " TO " + maxValue + ": ");
-                continue;
-            } else {
-                return number;
+            } catch (NumberFormatException | IOException e) {
+                System.out.println("You should type a number from " + minValue + " to " + maxValue + ": ");
             }
         }
     }
