@@ -26,6 +26,8 @@
         <javancss-maven-plugin.version>2.1</javancss-maven-plugin.version>
         <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
         <jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
+        <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
+        <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
 
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
@@ -135,7 +137,6 @@
                 </reportSets>
             </plugin>
 
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
@@ -146,6 +147,54 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jdepend-maven-plugin</artifactId>
                 <version>${jdepend-maven-plugin.version}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+                <version>${taglist-maven-plugin.version}</version>
+                <reportSets>
+                    <reportSet>
+                        <id>taglist-report</id>
+                        <reports>
+                            <report>taglist</report>
+                        </reports>
+                        <configuration>
+                            <tagListOptions>
+                                <tagClasses>
+                                    <tagClass>
+                                        <displayName>Todo Work</displayName>
+                                        <tags>
+                                            <tag>
+                                                <matchString>todo</matchString>
+                                                <matchType>ignoreCase</matchType>
+                                            </tag>
+                                            <tag>
+                                                <matchString>FIXME</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                        </tags>
+                                    </tagClass>
+                                    <tagClass>
+                                        <displayName>Architecture Review Needed</displayName>
+                                        <tags>
+                                            <tag>
+                                                <matchString>ARCH-REV</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                        </tags>
+                                    </tagClass>
+                                </tagClasses>
+                            </tagListOptions>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven-checkstyle-plugin.version}</version>
             </plugin>
         </plugins>
     </reporting>

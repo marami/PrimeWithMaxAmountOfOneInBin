@@ -8,8 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 public class ConsoleScanner {
 
-    private final static Charset ENCODING = StandardCharsets.UTF_8;
-    private final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, ENCODING));
+    private final Charset encoding = StandardCharsets.UTF_8;
+    private final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, encoding));
 
     public final int getInt(final int minValue, final int maxValue) {
         while (true) {
