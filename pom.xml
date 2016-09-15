@@ -21,6 +21,8 @@
         <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
         <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
         <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
+        <javancss-maven-plugin.version>2.1</javancss-maven-plugin.version>
+        <maven-surefire-report-plugin.version></maven-surefire-report-plugin.version>
 
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
@@ -102,6 +104,33 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin.version}</version>
+                <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>javancss-maven-plugin</artifactId>
+                <version>${javancss-maven-plugin.version}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.18.1</version>
+                <reportSets>
+                    <reportSet>
+                        <id>unit-tests</id>
+                        <reports>
+                            <report>report-only</report>
+                        </reports>
+                        <configuration>
+                            <linkXRef>true</linkXRef>
+                            <alwaysGenerateSurefireReport>true</alwaysGenerateSurefireReport>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
             </plugin>
         </plugins>
     </reporting>
