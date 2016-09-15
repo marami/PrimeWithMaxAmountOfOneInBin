@@ -3,10 +3,13 @@ package ua.com.marami;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class ConsoleScanner {
 
-    private BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private final static Charset ENCODING = StandardCharsets.UTF_8;
+    private final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, ENCODING));
 
     public final int getInt(final int minValue, final int maxValue) {
         while (true) {
